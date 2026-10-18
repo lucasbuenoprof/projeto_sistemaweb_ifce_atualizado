@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <header>   
         <div class="cabeçalho">
             <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
@@ -17,9 +18,12 @@
 
     <main>
         <!-- Caixa de Busca -->
+         <div>
         <fieldset>
-            <legend>Busca de Pacientes</legend>
+            <legend>Buscar Pacientes</legend>
+
             <form action="#" method="get">
+
                 <div class="campo">
                     <label for="nome">Nome do paciente:</label>
                     <input type="text" id="nome" name="nome">
@@ -30,10 +34,13 @@
                     <input type="date" id="data_nascimento" name="data_nascimento">
                 </div>
 
-                <button type="submit">Buscar</button>
-            </form>     
-        </fieldset>
+                <button class="but-buscar" type="submit">Buscar</button>
 
+            </form>
+        </div>     
+
+        <div class="tablist">
+        </fieldset>
         <!-- Tabela de Pacientes -->
         <fieldset>
             <legend>Lista de Pacientes</legend>
@@ -77,9 +84,13 @@
                 </tbody>
             </table>
         </fieldset>
+        </div>
+
     </main>
+
     <footer class="rodape">
         LB_Solutions™ - 2026
     </footer>
+
 </body>
 </html>

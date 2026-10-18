@@ -11,48 +11,44 @@
 </head>
 <body>
 
-    <!-- Cabeçalho simplificado do sistema -->
     <header class="cabeçalho">
         <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
     </header>
 
-    <!-- Conteúdo principal -->
+  
     <main class="login-container">
         
-        <!-- Logo do sistema -->
+        
         <img src="../imagens/logo_sigehsf.png" alt="Logo SIGEH" class="logo-login">
 
         <h3><i class="fa-solid fa-user-lock"></i> Acesse seu Usuário</h3>
 
-        <!-- Formulário isolado com classe .login -->
         <form class="login" action="sigeh_home.html" method="GET">
             
             <div class="campo">
                 <label for="usuario">
-                    <i class="fa-solid fa-user"></i> <strong>Usuário / E-mail:</strong>
+                    Usuário / E-mail:
                 </label>
-                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário ou e-mail" >
+                <input type="text" id="usuario" name="usuario">
             </div>
 
             <div class="campo">
                 <label for="senha">
-                    <i class="fa-solid fa-key"></i> <strong>Senha:</strong>
+                    Senha:
                 </label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <input type="password" id="senha" name="senha">
             </div>
 
-            <button type="submit">
-                <i class="fa-solid fa-right-to-bracket"></i> Entrar
-            </button>
+            <button type="submit"> Entrar </button>
 
             <p class="link-auxiliar">
-                <a href="#"><i class="fa-solid fa-lock"></i> Esqueceu sua senha?</a>
+                <a href="#">Esqueceu sua senha?</a>
             </p>
-        </form>
 
+        </form>
+        
     </main>
 
-    <!-- Rodapé -->
     <footer class="rodape">
         LB_Solutions™ - 2026
     </footer>

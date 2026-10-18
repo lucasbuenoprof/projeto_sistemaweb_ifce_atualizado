@@ -10,32 +10,40 @@
 </head>
     <body>
         <header>   
+
             <div class="cabeçalho">
                  <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
                 <a href="sigeh_login.html"><button><i class="fa-solid fa-right-from-bracket"></i> Sair</button></a>
             </div>
+
         </header>
-        <br>
-        <main>
-            <fieldset>
-                <legend><h1><i class="fa-solid fa-gauge-high"></i> Painel de Gerenciamento Administrativo </h1></legend>            
-                
-                        <div class="menuadm">
-                            <div class="opçao"><i class="fa-solid fa-users"></i> Pacientes
-                                <a href="sigeh_cad_paciente.html"><i class="fa-solid fa-user-plus"></i> Cadastrar</a>
-                                <a href="sigeh_buscar_paciente.html"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
-                            </div>    
-                            <div class="opçao"><i class="fa-solid fa-user-doctor"></i> Profissionais
-                                <a href="sigeh_cad_profissional.html"><i class="fa-solid fa-user-plus"></i> Cadastrar</a>
-                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
-                            </div>    
-                            <div class="opçao"><i class="fa-solid fa-file-medical"></i> Prontuários 
-                                <a href="#"><i class="fa-solid fa-file-circle-plus"></i> Cadastrar</a>
-                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
-                            </div>
-                        </div>
-            </fieldset>
+        <main >
+            
+                      
+            <nav class="paineladm">
+                <fieldset>
+                    <legend><h2> Painel de Gerenciamento Administrativo </h2></legend>
+                <div class="opçao">
+                    Pacientes
+                    <a href="sigeh_cad_paciente.html">Cadastrar</a>
+                    <a href="#">Buscar</a>
+                </div>
+
+                <div class="opçao">
+                    Profissionais
+                    <a href="sigeh_cad_profissional.html">Cadastrar</a>
+                    <a href="#">Buscar</a>
+                </div>
+
+                <div class="opçao">
+                    Prontuários
+                    <a href="#">Cadastrar</a>
+                    <a href="#">Buscar</a>
+                </div>
+                 </fieldset>
+            </nav>        
         </main>
+
         <footer class="rodape">
             LB_Solutions™ - 2026
         </footer>

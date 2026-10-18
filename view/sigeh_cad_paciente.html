@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
     <body>
-        <header>   
+        <header>  
+            
             <div class="cabeçalho">
                  <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
                 <a href="sigeh_login.html"><button>Sair</button></a>
             </div>
+
         </header>
+
         <main>
+
             <h1>Cadastro de Pacientes</h1>
             <!-- (Mudar para POST) -->
             <form action="sigeh_home.html" method="get">
@@ -55,6 +59,7 @@
                             <input type="email" id="email" name="email">
                         </div>
                 </fieldset>
+
                 <fieldset>
                     <legend><strong>Dados de Endereço</strong></legend>
                         <div class="campo">
@@ -89,10 +94,13 @@
                             <label for="nacionalidade">Nacionalidade:</label>
                             <input type="text" id="nacionalidade" name="nacionalidade">
                         </div>
-                </fieldset>                          
-                        <button type="submit">salvar</button>
-                        <button type="reset">Reiniciar</button>        
+                </fieldset>       
+                    
+                    <button class="but-salvar" type="submit">Salvar</button>
+                    <button class="but-reset" type="reset">Reiniciar</button>
+                                   
             </form>     
+
         </main>
         <footer class="rodape">
             LB_Solutions™
