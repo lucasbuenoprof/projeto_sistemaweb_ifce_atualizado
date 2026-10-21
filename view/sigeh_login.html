@@ -19,27 +19,26 @@
     <main class="login-container">
         
         
-        <img src="../imagens/logo_sigehsf.png" alt="Logo SIGEH" class="logo-login">
+        <img class="img-login" src="../imagens/logo_sigehsf.png" alt="Logo SIGEH" class="logo-login">
 
         <h3><i class="fa-solid fa-user-lock"></i> Acesse seu Usuário</h3>
 
-        <form class="login" action="sigeh_home.html" method="GET">
+        <form action="sigeh_home.html" method="GET">
             
-            <div class="campo">
+            
+            <div class="campo-log">
                 <label for="usuario">
-                    Usuário / E-mail:
+                    Usuário:
                 </label>
                 <input type="text" id="usuario" name="usuario">
             </div>
-
-            <div class="campo">
-                <label for="senha">
-                    Senha:
+            <div class="campo-log">
+                Senha:
                 </label>
-                <input type="password" id="senha" name="senha">
+                <input type="password" id="senha" name="senha">        
             </div>
 
-            <button type="submit"> Entrar </button>
+            <button class="but" id="but-acessar" type="submit"><i class="fa-solid fa-key"></i> Acessar </button>
 
             <p class="link-auxiliar">
                 <a href="#">Esqueceu sua senha?</a>

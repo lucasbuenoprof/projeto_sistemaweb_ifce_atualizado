@@ -12,7 +12,7 @@
     <header>   
         <div class="cabeçalho">
             <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
-            <a href="sigeh_login.html"><button type="button">Sair</button></a>
+            <a href="sigeh_login.html"><button class="but" id="but-sair"><i class="fa-solid fa-right-from-bracket"></i> Sair</button></a>
         </div>
     </header>
 
@@ -34,17 +34,16 @@
                     <input type="date" id="data_nascimento" name="data_nascimento">
                 </div>
 
-                <button class="but-buscar" type="submit">Buscar</button>
+                <button class="but" id="but-buscar" type="submit">Buscar</button>
 
             </form>
         </div>     
 
-        <div class="tablist">
         </fieldset>
         <!-- Tabela de Pacientes -->
         <fieldset>
             <legend>Lista de Pacientes</legend>
-            <table>
+            <table class="tab" id="list-pac">
                 <thead>
                     <tr class="cabeçatab">
                         <th>Nome</th>
@@ -57,7 +56,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="elementotab">
+                    <tr >
                         <td>Marcela Silva do Nascimento</td>
                         <td>15/10/1990</td>
                         <td>362.658.965-69</td>
@@ -69,7 +68,7 @@
                             <button type="button" class="btn-excluir">Excluir</button>
                         </td>
                     </tr>
-                    <tr class="elementotab">
+                    <tr>
                         <td>Francisco Carlos dos Santos</td>
                         <td>04/05/1974</td>
                         <td>561.565.455-88</td>
@@ -84,7 +83,6 @@
                 </tbody>
             </table>
         </fieldset>
-        </div>
 
     </main>
 

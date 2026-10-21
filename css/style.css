@@ -1,11 +1,62 @@
+/* ==========================================================================
+   Configurações Gerais
+   ========================================================================== */
+.but{
+    padding: 5px 10px;
+    margin: 8px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+}
 
+.tab{
+    width: 95%;                  /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: collapse;    /* Junta as bordas das células em linhas únicas */
+    margin: 10px;
+}
 
+/* ==========================================================================
+   Tela de Login
+   ========================================================================== */
+.login-container{
+background-color: rgb(241, 248, 248);
+color: rgb(10, 10, 10);
+align-items: center;
+padding: 20px;
+text-align: center; 
+margin: auto;
+border-radius: 4px;
+border: 4px solid rgb(6, 42, 77);
+border-radius: 6px;
+}
+
+.login-container .campo-log{
+background-color: rgb(6, 42, 77);
+color: hwb(0 100% 0%);
+padding: 15px;
+font-size: 1rem;
+}
+
+.login-container .img-login{
+width: 100px;
+}
+
+#but-acessar {
+background-color: #74fa1b;
+color: hwb(0 4% 96%);   
+}
+
+#but-acessar:hover {
+    background-color: #54b315;         /* Deixa o vermelho um pouco mais escuro no clique/hover */
+}
 
 /* ==========================================================================
    CABEÇALHO E BOTÃO DE SAIR (header)
    ========================================================================== */
 .cabeçalho {
-    background-color: rgb(0, 119, 255);
+    background-color: rgb(6, 42, 77);
     color: aliceblue;
     text-align: center;
     border-radius: 4px;
@@ -16,17 +67,12 @@
     justify-content: space-between;
 }
 
-.cabeçalho a button{
-    padding: 8px 16px;
+#but-sair{
     background-color: #f52d2d;
     color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 1000;
 }
 
-.cabeçalho a button:hover {
+#but-sair:hover {
     background-color: #bd2130;         /* Deixa o vermelho um pouco mais escuro no clique/hover */
 }
 /* ==========================================================================
@@ -37,7 +83,7 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
-     background-color: rgb(68, 148, 170);
+    background-color: rgb(68, 148, 170);
     color: rgb(255, 255, 255);
     border-radius: 4px;
     padding: 10px 10px;
@@ -90,53 +136,46 @@ body {
    #######
    ========================================================================== */
 
-.but-salvar{
-    
+#but-salvar{
     background-color: #199400;
-    color: #ffffff;
-    padding: 8px 16px;
-    margin: 10px 2px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 1000;
-}
-.but-reset{
-    background-color: #ff9901;
-    color: #ffffff;
-    padding: 8px 16px;
-    margin: 10px 2px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 1000;
-}
-.but-buscar{
-    background-color: #4c00da;
-    color: #ffffff;
-    padding: 8px 16px;
-    margin: 10px 2px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 1000;
-}
+}    
 
-.but-buscar:hover {
-    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
-
-.but-salvar:hover {
+#but-salvar:hover {
     background-color: #57d100;  /* Escurece a cor do vermelho no hover */
     transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
-.but-reset:hover {
+#but-reset{
+    background-color: #e78c02;
+}
+
+#but-reset:hover {
     background-color: #ffb62f;  /* Escurece a cor do vermelho no hover */
     transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
+#but-buscar{
+    background-color: #4c00da;
+}
+
+#but-buscar:hover {
+    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+/* ==========================================================================
+   Busca de pacientes
+   ========================================================================== */
+th, td{
+    padding: 10px 12px;           /* Espaçamento interno para o texto não colar na linha */
+    border-bottom: 1px solid #dee2e6; /* Linha horizontal fina cinza na parte inferior */
+    text-align: left;             /* Alinha o texto das colunas à esquerda */
+    font-size: 0.9rem;
+}
+th {
+    background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
+    color: #ffffff;                /* Texto branco no topo */
+    font-weight: bold;
+}
 /* ==========================================================================
    RODAPÉ (footer)
    ========================================================================== */
