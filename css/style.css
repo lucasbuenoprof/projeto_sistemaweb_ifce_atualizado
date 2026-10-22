@@ -12,8 +12,8 @@
 }
 
 .tab{
-    width: 95%;                  /* Faz a tabela ocupar toda a largura disponível */
-    border-collapse: collapse;    /* Junta as bordas das células em linhas únicas */
+    width: 95%;                  
+    border-collapse: collapse;    
     margin: 10px;
 }
 
@@ -49,8 +49,7 @@ color: hwb(0 4% 96%);
 }
 
 #but-acessar:hover {
-    background-color: #54b315;         /* Deixa o vermelho um pouco mais escuro no clique/hover */
-}
+    background-color: #54b315;       
 
 /* ==========================================================================
    CABEÇALHO E BOTÃO DE SAIR (header)
@@ -167,7 +166,7 @@ body {
    ========================================================================== */
 th, td{
     padding: 10px 12px;           /* Espaçamento interno para o texto não colar na linha */
-    border-bottom: 1px solid #dee2e6; /* Linha horizontal fina cinza na parte inferior */
+    border-bottom: 1px solid #838383; /* Linha horizontal fina cinza na parte inferior */
     text-align: left;             /* Alinha o texto das colunas à esquerda */
     font-size: 0.9rem;
 }
@@ -175,6 +174,12 @@ th {
     background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
     color: #ffffff;                /* Texto branco no topo */
     font-weight: bold;
+}
+
+td {
+    background-color: #d0e3f7;     /* Fundo azul hospitalar para o topo */
+    color: #000000;                /* Texto branco no topo */
+
 }
 /* ==========================================================================
    RODAPÉ (footer)

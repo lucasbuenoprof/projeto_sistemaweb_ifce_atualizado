@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Profissionais</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>   
+        <div>
+            <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
+            <a href="sigeh_login.html"><button type="button">Sair</button></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cadastro de Profissional Médico</h1>
+
+        <form action="sigeh_home.html" method="get">
+           
+            <fieldset>
+                <legend>Dados Gerais</legend>
+                
+                <div class="campo">
+                    <label for="nome">Nome do Médico:</label>
+                    <input type="text" id="nome" name="nome" required> 
+                </div>    
+
+                <div class="campo">
+                    <label for="especialidade">Especialidade:</label>
+                    <input type="text" id="especialidade" name="especialidade">
+                </div>
+
+                <div class="campo">
+                    <label for="num_crm">Cadastro CRM:</label>
+                    <input type="text" id="num_crm" name="num_crm">
+                </div>
+
+                <div class="campo">
+                    <label for="num_cpf">CPF:</label>
+                    <input type="text" id="num_cpf" name="num_cpf">
+                </div>
+
+                <div class="campo">
+                    <label for="num_telefone">Contato:</label>
+                    <input type="text" id="num_telefone" name="num_telefone">
+                </div>
+
+                <div class="campo">
+                    <label for="eemail">E-mail:</label>
+                    <input type="email" id="eemail" name="eemail">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep">
+                </div>    
+
+                <div class="campo">
+                    <label for="endereco">Logradouro:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+
+                <div class="campo">
+                    <label for="num_endereco">Nº:</label>
+                    <input type="text" id="num_endereco" name="num_endereco"> 
+                </div>
+
+                <div class="campo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div> 
+
+                <div class="campo">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento">
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div> 
+
+                <div class="campo">
+                    <label for="uf">Estado:</label>
+                    <input type="text" id="uf" name="uf">
+                </div> 
+
+                <div class="campo">
+                    <label for="nacionalidade">Nacionalidade:</label>
+                    <input type="text" id="nacionalidade" name="nacionalidade">
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="submit">Salvar</button>
+                <button type="reset">Reiniciar</button>   
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        LB_Solutions™ - 2026
+    </footer>
+</body>
+</html>
