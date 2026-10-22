@@ -72,7 +72,7 @@ color: hwb(0 4% 96%);
 }
 
 #but-sair:hover {
-    background-color: #bd2130;         /* Deixa o vermelho um pouco mais escuro no clique/hover */
+    background-color: #bd2130;        
 }
 /* ==========================================================================
    CORPO PRINCIPAL (Main)
@@ -93,14 +93,12 @@ body {
    PAGINA HOME
    ========================================================================== */
 .paineladm {
-    /* 1. Define que o container do menu ocupará exatamente 1/3 da largura */
-    width: 25.33%;               /* Ocupa exatamente 1/3 da tela */
-    min-width: 220px;            /* Largura mínima de segurança para não espremer no celular */
+    width: 25.33%;           
+    min-width: 220px;           
     text-align: center;
-    /* 2. Organiza as opções em coluna (uma acima da outra) */
     display: flex;
-    flex-direction: column;      /* Empilha os quadros de opções na vertical */
-    gap: 20px;                   /* Espaçamento uniforme entre cada opção */
+    flex-direction: column;    
+    gap: 20px;                  
 }
 
 .paineladm .opçao {
@@ -184,7 +182,7 @@ td {
 /* ==========================================================================
    RODAPÉ (footer)
    ========================================================================== */
-.rodape {
+#rodape {
     background-color: rgb(66, 66, 66);
     color: aliceblue;
     text-align: center;
