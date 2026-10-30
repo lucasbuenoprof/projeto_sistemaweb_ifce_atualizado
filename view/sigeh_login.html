@@ -25,19 +25,17 @@
 
         <form action="sigeh_home.html" method="GET">
             
-            
-            <div class="campo-log">
-                <label for="usuario">
-                    Usuário:
-                </label>
-                <input type="text" id="usuario" name="usuario">
-            </div>
-            <div class="campo-log">
-                Senha:
-                </label>
-                <input type="password" id="senha" name="senha">        
-            </div>
-
+            <fieldset id="campo-login">
+                <div>
+                    <label class="usuario-senha" for="usuario" >Usuário:</label>
+                    <input type="text" id="usuario" name="usuario">
+                </div>
+                <div>
+                    <label class="usuario-senha" for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">        
+                </div>
+            </fieldset>    
+    
             <button class="but" id="but-acessar" type="submit"><i class="fa-solid fa-key"></i> Acessar </button>
 
             <p class="link-auxiliar">
