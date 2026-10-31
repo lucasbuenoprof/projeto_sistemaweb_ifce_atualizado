@@ -135,11 +135,11 @@ border: 4px solid rgb(6, 42, 77);
 border-radius: 6px;
 }
 
-#campo-login{
+.campo-login{
     background-color: #004085;
 }
 
-.usuario-senha{
+.campo-login label{
     color: #fefefe;
 }
 
