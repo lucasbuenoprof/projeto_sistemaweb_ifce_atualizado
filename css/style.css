@@ -39,27 +39,6 @@ body {
     color: #ffffff;
 }
 
-#but-excluir{
-    background-color: #b61c17;
-    color: #ffffff;
-
-}
-
-#but-excluir:hover {
-    background-color: #ff2a2a;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
-
-#but-editar{
-    background-color: #72ac26;
-    color: #ffffff;
-
-}
-
-#but-editar:hover {
-    background-color: #8deb36;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
 
 .tab{
     width: 95%;                  /* Faz a tabela ocupar toda a largura disponível */
@@ -68,24 +47,23 @@ body {
 }
 
 /* ==========================================================================
-   AJUSTE DE FORMULÁRIOS E CAMPOS LADO A LADO
+FORMULÁRIOS DE CADASTRO
    ========================================================================== */
 
-/* 1. Ativa a grelha no container do agrupamento */
+
 fieldset {
-    border: 1px solid rgb(6, 42, 77);        /* Borda fina cinzenta suave */
-    border-radius: 6px;               /* Cantos arredondados */
+    border: 1px solid rgb(6, 42, 77);      
+    border-radius: 6px;             
     padding: 20px;
     margin-bottom: 25px;
-    background-color: rgb(217, 219, 219);        /* Fundo branco limpo */
+    background-color: rgb(217, 219, 219);       
 
-    /* Configuração do Grid para colunas automáticas */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Colunas dinâmicas */
     gap: 15px 20px;                   /* Espaçamento entre linhas e colunas */
 }
 
-/* 2. FORÇA O TÍTULO (<legend>) A OCUPAR A LARGURA TOTAL DO TOPO */
+
 legend {
     font-weight: bold;
     color: #000000;                   /* Azul do tema SIGEH */
@@ -94,7 +72,7 @@ legend {
     grid-column: 1 / -1;              /* ESTA REGRA FIXA O TÍTULO NO TOPO DA LINHA */
 }
 
-/* 3. Organização de cada bloco de campo (.campo) */
+
 .campo {
     display: flex;
     flex-direction: column;           /* Deixa o rótulo (label) acima da caixa de entrada */
@@ -107,7 +85,6 @@ label {
     color: rgb(6, 42, 77);                   /* Texto em cinzento escuro para boa leitura */
 }
 
-/* 4. Estilização uniforme das caixas de entrada */
 input[type="text"],
 input[type="date"],
 input[type="password"],
@@ -121,9 +98,28 @@ select {
     box-sizing: border-box;            /* Evita que a caixa ultrapasse os limites */
 }
 
+#but-salvar{
+    background-color: #199400;
+}    
+
+#but-salvar:hover {
+    background-color: #57d100;  /* Escurece a cor do vermelho no hover */
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+
+#but-reset{
+    background-color: #e78c02;
+}
+
+#but-reset:hover {
+    background-color: #ffb62f;  /* Escurece a cor do vermelho no hover */
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+
+
 
 /* ==========================================================================
-   Tela de Login
+   TELA DE LOGIN
    ========================================================================== */
 .login-container{
 background-color: rgb(217, 219, 219);
@@ -224,38 +220,9 @@ color: hwb(0 4% 96%);
     background-color: #004085;
 }
     
+
 /* ==========================================================================
-   #######
-   ========================================================================== */
-
-#but-salvar{
-    background-color: #199400;
-}    
-
-#but-salvar:hover {
-    background-color: #57d100;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
-
-#but-reset{
-    background-color: #e78c02;
-}
-
-#but-reset:hover {
-    background-color: #ffb62f;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
-
-#but-buscar{
-    background-color: #4c00da;
-}
-
-#but-buscar:hover {
-    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
-}
-/* ==========================================================================
-   Busca de pacientes
+   TABELAS (LISTAS E BUSCA)
    ========================================================================== */
 th, td{
     padding: 10px 12px;           /* Espaçamento interno para o texto não colar na linha */
@@ -267,6 +234,37 @@ th {
     background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
     color: #ffffff;                /* Texto branco no topo */
     font-weight: bold;
+}
+
+#but-buscar{
+    background-color: #4c00da;
+}
+
+#but-buscar:hover {
+    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+
+#but-excluir{
+    background-color: #b61c17;
+    color: #ffffff;
+
+}
+
+#but-excluir:hover {
+    background-color: #ff2a2a;  /* Escurece a cor do vermelho no hover */
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+
+#but-editar{
+    background-color: #72ac26;
+    color: #ffffff;
+
+}
+
+#but-editar:hover {
+    background-color: #8deb36;  
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 /* ==========================================================================
    RODAPÉ (footer)
