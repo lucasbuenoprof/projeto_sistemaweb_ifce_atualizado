@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>busca_paciente</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../js/main.js"></script>
+</head>
+<body class="body-opçao2">
+
+    <header>   
+        <div class="cabeçalho">
+            <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
+            <a href="sigeh_login.html"><button class="but" id="but-sair"><i class="fa-solid fa-right-from-bracket"></i> Sair</button></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Caixa de Busca -->
+        <fieldset>
+            <legend>Buscar Profissionais</legend>
+
+            <form action="#" method="get">
+
+                <div class="campo">
+                    <label for="nome">Nome do Profissional:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+                </div>
+
+                <button class="but" id="but-buscar" type="submit">Buscar</button>
+
+            </form>   
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Lista de Profissionais</legend>
+            <table class="tab" id="list-pac">
+                <thead>
+                    <tr class="cabeçatab">
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Especialidade</th>
+                        <th>Data de Nascimento</th>
+                        <th>CPF</th>
+                        <th>Contato</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td>Fernando Filho do Nascimento</td>
+                        <td>Enfermeiro(a)</td>
+                        <td>Oncologia</td>
+                        <td>18/11/1994</td>
+                        <td>062.644.852-86</td>
+                        <td>88 99981-6915</td>
+                        <td>
+                            <button class="but" id="but-editar" type="button" >Editar</button>
+                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Camila Sousa Fernandes</td>
+                        <td>Médico(a)</td>
+                        <td>Emergência</td>
+                        <td>10/05/1988</td>
+                        <td>604.735.862-88</td>
+                        <td>88 98165-9902</td>
+                        <td>
+                            <button class="but" id="but-editar" type="button" >Editar</button>
+                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+    </main>
+
+    <footer id="rodape">
+        LB_Solutions™ - 2026
+    </footer>
+
+</body>
+</html>

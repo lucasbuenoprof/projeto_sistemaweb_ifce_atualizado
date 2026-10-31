@@ -39,6 +39,10 @@ body {
     color: #ffffff;
 }
 
+.but:hover{
+    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
+}
+
 
 .tab{
     width: 95%;                  /* Faz a tabela ocupar toda a largura disponível */
@@ -104,7 +108,6 @@ select {
 
 #but-salvar:hover {
     background-color: #57d100;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
 #but-reset{
@@ -113,7 +116,6 @@ select {
 
 #but-reset:hover {
     background-color: #ffb62f;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
 
@@ -242,7 +244,6 @@ th {
 
 #but-buscar:hover {
     background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
 #but-excluir{
@@ -253,19 +254,17 @@ th {
 
 #but-excluir:hover {
     background-color: #ff2a2a;  /* Escurece a cor do vermelho no hover */
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
 #but-editar{
     background-color: #72ac26;
     color: #ffffff;
-
 }
 
 #but-editar:hover {
     background-color: #8deb36;  
-    transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
+
 /* ==========================================================================
    RODAPÉ (footer)
    ========================================================================== */
