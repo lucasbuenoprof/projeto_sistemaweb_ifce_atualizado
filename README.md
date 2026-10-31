@@ -1,1 +1,3 @@
-Fase de criação de páginas HTML
+Fase de criação de páginas HTML                                                                                                             - Página de Login / Home (menu principal) / Cadastro de pacientes e Profissionais / Listas e Busca. Faltando apenas Página de cadastro e busca de Prontuários por depender de algumas configurações mais avançadas.  
+Implementação de CSS                                                                                                                        - Aplicações de stilos básicos e intermediários conforme o desenvolvimento do projeto          
+Implementação de JavaScript                                                                                                                 - Conceitos iniciais
