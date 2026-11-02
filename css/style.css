@@ -10,11 +10,11 @@ body {
     color: rgb(0, 0, 0);
     
     /* 20px no topo e na base | 15px nas laterais esquerda/direita */
-    padding: 20px 15px; 
+    padding: 20px 15px;
+    
 }
 
 .but{
-  
     padding: 5px 10px;
     margin: 8px 2px;
     border-radius: 4px;
@@ -33,20 +33,25 @@ fieldset {
     box-sizing: border-box;            /* CHAVE: Garante que o padding e a borda fiquem dentro do cálculo da largura */
     border: 1px solid rgb(6, 42, 77);      
     border-radius: 6px;             
-    padding: 20px;
+    padding: 20px 10px;
     margin-bottom: 25px;
-    background-color: rgb(217, 219, 219);               /* Evita que elementos internos vazem das bordas */
+    background-color: rgb(217, 219, 219);             
 }
-
-
 
 legend {
     font-weight: bold;
     color: #000000;                   /* Azul do tema SIGEH */
     padding: 0 10px;                  /* Margem interna do texto */
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     grid-column: 1 / -1;              /* ESTA REGRA FIXA O TÍTULO NO TOPO DA LINHA */
+    text-align: center;
 }
+
+h1{
+    text-align: center;
+}
+
+
 /* ==========================================================================
    TABELAS (LISTAS E BUSCA)
    ========================================================================== */
@@ -55,9 +60,16 @@ legend {
 .tab-container {
     width: 100%;                  /* Ocupa a largura total da área disponível */
     overflow-x: auto;             /* Cria rolagem horizontal APENAS se a tabela não couber */
-    margin-top: 15px;
+    margin-top: 10px;
+    padding: 20px 10px;
     border-radius: 6px;
-    border: 1px solid #ced4da;     /* Borda sutil em volta do bloco da tabela */
+    border: 1px solid rgb(6, 42, 77); 
+    box-sizing: border-box;  
+}
+
+.tab-container legend{
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* Ajuste na Tabela */
@@ -70,13 +82,13 @@ table {
 td, th {
     padding: 10px 12px;
     border-bottom: 1px solid #dee2e6;
-    text-align: left;
+    text-align: left;  
     white-space: nowrap;          /* Evita que o texto quebre em várias linhas e desfigure as colunas */
 }
 
 th {
     background-color: #0056b3;         /* Fundo azul hospitalar */
-    color: #ffffff;                    /* Texto branco no topo */
+    color: #ffffff;
 }
 
 #but-buscar{
@@ -158,7 +170,7 @@ select {
 /* ==========================================================================
    TELA DE LOGIN
    ========================================================================== */
-.login-container{
+#login-container{
 background-color: rgb(217, 219, 219);
 color: rgb(10, 10, 10);
 align-items: center;
