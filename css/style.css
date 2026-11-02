@@ -29,15 +29,16 @@ body {
 }
 
 fieldset {
+    width: 100%;                      /* Força a caixa a ocupar 100% da largura disponível */
+    box-sizing: border-box;            /* CHAVE: Garante que o padding e a borda fiquem dentro do cálculo da largura */
     border: 1px solid rgb(6, 42, 77);      
     border-radius: 6px;             
     padding: 20px;
     margin-bottom: 25px;
-    background-color: rgb(217, 219, 219);       
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;                  /* CHAVE: Corta qualquer vazamento horizontal da página */
+    background-color: rgb(217, 219, 219);               /* Evita que elementos internos vazem das bordas */
 }
+
+
 
 legend {
     font-weight: bold;
@@ -52,32 +53,28 @@ legend {
 
 /* 2. O container da tabela cria a rolagem interna */
 .tab-container {
-    width: 100%;
-    overflow-x: auto !important;       /* FORÇA a rolagem horizontal a ser criada AQUI */
-    -webkit-overflow-scrolling: touch; /* Rolagem suave em telas sensíveis ao toque */
+    width: 100%;                  /* Ocupa a largura total da área disponível */
+    overflow-x: auto;             /* Cria rolagem horizontal APENAS se a tabela não couber */
     margin-top: 15px;
-    border: 1px solid #ced4da;
     border-radius: 6px;
-    display: block;                    /* Garante comportamento de bloco */
+    border: 1px solid #ced4da;     /* Borda sutil em volta do bloco da tabela */
 }
 
-/* 3. A tabela precisa de uma largura mínima superior à janela para OBRIGAR a rolagem */
-.tab-container table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 850px !important;       /* CHAVE: Aumentado para 850px para garantir a barra no PC */
+/* Ajuste na Tabela */
+table {
+    width: 100%;                  /* Faz a tabela tentar usar o espaço total */
+    border-collapse: collapse;    /* Junta as bordas das células */
+    min-width: 500px;             /* Garante que a tabela não fique esmagada em telas muito pequenas */
 }
 
-/* 4. Células da tabela */
-.tab-container th,
-.tab-container td {
+td, th {
     padding: 10px 12px;
     border-bottom: 1px solid #dee2e6;
     text-align: left;
-    white-space: nowrap !important;    /* Evita que os dados dobrem linha */
+    white-space: nowrap;          /* Evita que o texto quebre em várias linhas e desfigure as colunas */
 }
 
-.tab-container th {
+th {
     background-color: #0056b3;         /* Fundo azul hospitalar */
     color: #ffffff;                    /* Texto branco no topo */
 }
