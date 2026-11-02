@@ -40,10 +40,9 @@ fieldset {
     padding: 20px;
     margin-bottom: 25px;
     background-color: rgb(217, 219, 219);       
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Colunas dinâmicas */
-    gap: 15px 20px;                   /* Espaçamento entre linhas e colunas */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;               /* Evita que elementos vazem do cartão */
 }
 
 
@@ -207,32 +206,31 @@ color: hwb(0 4% 96%);
    ========================================================================== */
 
 
+/* 2. O container da tabela cria a rolagem quando necessário */
 .tab-container {
-    width: 100%;                  /* Ocupa a largura total da área disponível */
-    overflow-x: auto;             /* Cria rolagem horizontal APENAS se a tabela não couber */
+    width: 100%;
+    overflow-x: auto;       /* FORÇA a rolagem horizontal a aparecer */
     margin-top: 15px;
+    border: 1px solid #ced4da;
     border-radius: 6px;
-    border: 1px solid #ced4da;     /* Borda sutil em volta do bloco da tabela */
 }
 
-/* Ajuste na Tabela */
 table {
-    width: 100%;                  /* Faz a tabela tentar usar o espaço total */
-    border-collapse: collapse;    /* Junta as bordas das células */
-    min-width: 500px;             /* Garante que a tabela não fique esmagada em telas muito pequenas */
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;       /* CHAVE: Garante que a tabela não encolha menos que 650px */
 }
 
-td, th {
+th, td {
     padding: 10px 12px;
     border-bottom: 1px solid #dee2e6;
     text-align: left;
-    white-space: nowrap;          /* Evita que o texto quebre em várias linhas e desfigure as colunas */
+    white-space: nowrap;    /* Evita que o texto quebre linha e esprema as colunas */
 }
 
 th {
     background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
     color: #ffffff;                /* Texto branco no topo */
-    font-weight: bold;
 }
 
 #but-buscar{
