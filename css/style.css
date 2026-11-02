@@ -207,28 +207,33 @@ color: hwb(0 4% 96%);
 
 
 /* 2. O container da tabela cria a rolagem quando necessário */
+/* 2. O seu container no HTML com o nome exato: class="tab-container" */
 .tab-container {
     width: 100%;
-    overflow-x: auto;       /* FORÇA a rolagem horizontal a aparecer */
+    overflow-x: auto !important;       /* RETÉM a barra de rolagem horizontal AQUI dentro */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave em smartphones */
     margin-top: 15px;
     border: 1px solid #ced4da;
     border-radius: 6px;
 }
 
-table {
+/* 3. A tabela exige largura mínima suficiente para acionar a rolagem na div */
+.tab-container table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 650px;       /* CHAVE: Garante que a tabela não encolha menos que 650px */
+    min-width: 750px;                 /* OBRIGA a rolagem a surgir dentro da div se a tela/janela for < 750px */
 }
 
-th, td {
+/* 4. As células não quebram texto */
+.tab-container th,
+.tab-container td {
     padding: 10px 12px;
     border-bottom: 1px solid #dee2e6;
     text-align: left;
-    white-space: nowrap;    /* Evita que o texto quebre linha e esprema as colunas */
+    white-space: nowrap !important;    /* Mantém os dados da tabela alinhados na mesma linha */
 }
 
-th {
+.tab-container th {
     background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
     color: #ffffff;                /* Texto branco no topo */
 }
