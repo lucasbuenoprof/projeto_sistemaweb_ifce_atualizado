@@ -29,13 +29,6 @@ body {
     transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
-
-.tab{
-    width: 95%;                  /* Faz a tabela ocupar toda a largura disponível */
-    border-collapse: collapse;    /* Junta as bordas das células em linhas únicas */
-    margin: 10px;
-}
-
 /* ==========================================================================
 FORMULÁRIOS DE CADASTRO
    ========================================================================== */
@@ -212,12 +205,30 @@ color: hwb(0 4% 96%);
 /* ==========================================================================
    TABELAS (LISTAS E BUSCA)
    ========================================================================== */
-th, td{
-    padding: 10px 12px;           /* Espaçamento interno para o texto não colar na linha */
-    border-bottom: 1px solid #dee2e6; /* Linha horizontal fina cinza na parte inferior */
-    text-align: left;             /* Alinha o texto das colunas à esquerda */
-    font-size: 0.9rem;
+
+
+.tab-container {
+    width: 100%;                  /* Ocupa a largura total da área disponível */
+    overflow-x: auto;             /* Cria rolagem horizontal APENAS se a tabela não couber */
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;     /* Borda sutil em volta do bloco da tabela */
 }
+
+/* Ajuste na Tabela */
+table {
+    width: 100%;                  /* Faz a tabela tentar usar o espaço total */
+    border-collapse: collapse;    /* Junta as bordas das células */
+    min-width: 500px;             /* Garante que a tabela não fique esmagada em telas muito pequenas */
+}
+
+td, th {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+    white-space: nowrap;          /* Evita que o texto quebre em várias linhas e desfigure as colunas */
+}
+
 th {
     background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
     color: #ffffff;                /* Texto branco no topo */

@@ -42,45 +42,47 @@
         <!-- Tabela de Pacientes -->
         <fieldset>
             <legend>Lista de Pacientes</legend>
-            <table class="tab" id="list-pac">
-                <thead>
-                    <tr class="cabeçatab">
-                        <th>Nome</th>
-                        <th>Data de Nascimento</th>
-                        <th>CPF</th>
-                        <th>Nº do prontuário</th>
-                        <th>Contato</th>
-                        <th>Cidade</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr >
-                        <td>Marcela Silva do Nascimento</td>
-                        <td>15/10/1990</td>
-                        <td>362.658.965-69</td>
-                        <td>000015</td>
-                        <td>88 99388-7514</td>
-                        <td>Sobral</td>
-                        <td>
-                            <button class="but" id="but-editar" type="button" >Editar</button>
-                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Francisco Carlos dos Santos</td>
-                        <td>04/05/1974</td>
-                        <td>561.565.455-88</td>
-                        <td>000016</td>
-                        <td>88 99984-6556</td>
-                        <td>Forquilha</td>
-                        <td>
-                            <button class="but" id="but-editar" type="button" >Editar</button>
-                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tab-container">
+                <table>
+                    <thead>
+                        <tr class="cabeçatab">
+                            <th>Nome</th>
+                            <th>Data de Nascimento</th>
+                            <th>CPF</th>
+                            <th>Nº do prontuário</th>
+                            <th>Contato</th>
+                            <th>Cidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>Marcela Silva do Nascimento</td>
+                            <td>15/10/1990</td>
+                            <td>362.658.965-69</td>
+                            <td>000015</td>
+                            <td>88 99388-7514</td>
+                            <td>Sobral</td>
+                            <td>
+                                <button class="but" id="but-editar" type="button" >Editar</button>
+                                <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Carlos dos Santos</td>
+                            <td>04/05/1974</td>
+                            <td>561.565.455-88</td>
+                            <td>000016</td>
+                            <td>88 99984-6556</td>
+                            <td>Forquilha</td>
+                            <td>
+                                <button class="but" id="but-editar" type="button" >Editar</button>
+                                <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </fieldset>
 
     </main>

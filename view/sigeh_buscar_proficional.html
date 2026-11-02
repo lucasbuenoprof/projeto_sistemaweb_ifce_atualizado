@@ -42,45 +42,47 @@
 
         <fieldset>
             <legend>Lista de Profissionais</legend>
-            <table class="tab" id="list-pac">
-                <thead>
-                    <tr class="cabeçatab">
-                        <th>Nome</th>
-                        <th>Função</th>
-                        <th>Especialidade</th>
-                        <th>Data de Nascimento</th>
-                        <th>CPF</th>
-                        <th>Contato</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr >
-                        <td>Fernando Filho do Nascimento</td>
-                        <td>Enfermeiro(a)</td>
-                        <td>Oncologia</td>
-                        <td>18/11/1994</td>
-                        <td>062.644.852-86</td>
-                        <td>88 99981-6915</td>
-                        <td>
-                            <button class="but" id="but-editar" type="button" >Editar</button>
-                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Camila Sousa Fernandes</td>
-                        <td>Médico(a)</td>
-                        <td>Emergência</td>
-                        <td>10/05/1988</td>
-                        <td>604.735.862-88</td>
-                        <td>88 98165-9902</td>
-                        <td>
-                            <button class="but" id="but-editar" type="button" >Editar</button>
-                            <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tab-container">
+                <table>
+                    <thead>
+                        <tr class="cabeçatab">
+                            <th>Nome</th>
+                            <th>Função</th>
+                            <th>Especialidade</th>
+                            <th>Data de Nascimento</th>
+                            <th>CPF</th>
+                            <th>Contato</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>Fernando Filho do Nascimento</td>
+                            <td>Enfermeiro(a)</td>
+                            <td>Oncologia</td>
+                            <td>18/11/1994</td>
+                            <td>062.644.852-86</td>
+                            <td>88 99981-6915</td>
+                            <td>
+                                <button class="but" id="but-editar" type="button" >Editar</button>
+                                <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Camila Sousa Fernandes</td>
+                            <td>Médico(a)</td>
+                            <td>Emergência</td>
+                            <td>10/05/1988</td>
+                            <td>604.735.862-88</td>
+                            <td>88 98165-9902</td>
+                            <td>
+                                <button class="but" id="but-editar" type="button" >Editar</button>
+                                <button class="but" id="but-excluir" type="button" onclick="confirmarExclusao(event)">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </fieldset>
 
     </main>
