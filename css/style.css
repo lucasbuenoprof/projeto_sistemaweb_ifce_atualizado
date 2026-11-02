@@ -8,10 +8,9 @@ body {
     margin: 0;
     background-color: rgb(236, 239, 240);
     color: rgb(0, 0, 0);
-    border-radius: 4px;
-    padding: 10px 10px;
-    margin: 5px 0;
-    font-weight: bold;
+    
+    /* 20px no topo e na base | 15px nas laterais esquerda/direita */
+    padding: 20px 15px; 
 }
 
 .but{
@@ -29,11 +28,6 @@ body {
     transform: translateY(-2px); /* Efeito opcional: eleva o botão 2px para cima */
 }
 
-/* ==========================================================================
-FORMULÁRIOS DE CADASTRO
-   ========================================================================== */
-
-
 fieldset {
     border: 1px solid rgb(6, 42, 77);      
     border-radius: 6px;             
@@ -42,9 +36,8 @@ fieldset {
     background-color: rgb(217, 219, 219);       
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden;               /* Evita que elementos vazem do cartão */
+    overflow: hidden;                  /* CHAVE: Corta qualquer vazamento horizontal da página */
 }
-
 
 legend {
     font-weight: bold;
@@ -53,6 +46,73 @@ legend {
     font-size: 1.05rem;
     grid-column: 1 / -1;              /* ESTA REGRA FIXA O TÍTULO NO TOPO DA LINHA */
 }
+/* ==========================================================================
+   TABELAS (LISTAS E BUSCA)
+   ========================================================================== */
+
+/* 2. O container da tabela cria a rolagem interna */
+.tab-container {
+    width: 100%;
+    overflow-x: auto !important;       /* FORÇA a rolagem horizontal a ser criada AQUI */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave em telas sensíveis ao toque */
+    margin-top: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    display: block;                    /* Garante comportamento de bloco */
+}
+
+/* 3. A tabela precisa de uma largura mínima superior à janela para OBRIGAR a rolagem */
+.tab-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px !important;       /* CHAVE: Aumentado para 850px para garantir a barra no PC */
+}
+
+/* 4. Células da tabela */
+.tab-container th,
+.tab-container td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+    white-space: nowrap !important;    /* Evita que os dados dobrem linha */
+}
+
+.tab-container th {
+    background-color: #0056b3;         /* Fundo azul hospitalar */
+    color: #ffffff;                    /* Texto branco no topo */
+}
+
+#but-buscar{
+    background-color: #4c00da;
+}
+
+#but-buscar:hover {
+    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
+}
+
+#but-excluir{
+    background-color: #b61c17;
+    color: #ffffff;
+
+}
+
+#but-excluir:hover {
+    background-color: #ff2a2a;  /* Escurece a cor do vermelho no hover */
+}
+
+#but-editar{
+    background-color: #72ac26;
+    color: #ffffff;
+}
+
+#but-editar:hover {
+    background-color: #8deb36;  
+}
+
+
+/* ==========================================================================
+FORMULÁRIOS DE CADASTRO
+   ========================================================================== */
 
 
 .campo {
@@ -200,70 +260,6 @@ color: hwb(0 4% 96%);
     background-color: #004085;
 }
     
-
-/* ==========================================================================
-   TABELAS (LISTAS E BUSCA)
-   ========================================================================== */
-
-
-/* 2. O container da tabela cria a rolagem quando necessário */
-/* 2. O seu container no HTML com o nome exato: class="tab-container" */
-.tab-container {
-    width: 100%;
-    overflow-x: auto !important;       /* RETÉM a barra de rolagem horizontal AQUI dentro */
-    -webkit-overflow-scrolling: touch; /* Rolagem suave em smartphones */
-    margin-top: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-}
-
-/* 3. A tabela exige largura mínima suficiente para acionar a rolagem na div */
-.tab-container table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 750px;                 /* OBRIGA a rolagem a surgir dentro da div se a tela/janela for < 750px */
-}
-
-/* 4. As células não quebram texto */
-.tab-container th,
-.tab-container td {
-    padding: 10px 12px;
-    border-bottom: 1px solid #dee2e6;
-    text-align: left;
-    white-space: nowrap !important;    /* Mantém os dados da tabela alinhados na mesma linha */
-}
-
-.tab-container th {
-    background-color: #0056b3;     /* Fundo azul hospitalar para o topo */
-    color: #ffffff;                /* Texto branco no topo */
-}
-
-#but-buscar{
-    background-color: #4c00da;
-}
-
-#but-buscar:hover {
-    background-color: #7b2aff;  /* Escurece a cor do vermelho no hover */
-}
-
-#but-excluir{
-    background-color: #b61c17;
-    color: #ffffff;
-
-}
-
-#but-excluir:hover {
-    background-color: #ff2a2a;  /* Escurece a cor do vermelho no hover */
-}
-
-#but-editar{
-    background-color: #72ac26;
-    color: #ffffff;
-}
-
-#but-editar:hover {
-    background-color: #8deb36;  
-}
 
 /* ==========================================================================
    RODAPÉ (footer)
