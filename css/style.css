@@ -170,38 +170,7 @@ select {
 /* ==========================================================================
    TELA DE LOGIN
    ========================================================================== */
-#login-container{
-background-color: rgb(217, 219, 219);
-color: rgb(10, 10, 10);
-align-items: center;
-padding: 20px;
-text-align: center; 
-margin: auto;
-border-radius: 4px;
-border: 4px solid rgb(6, 42, 77);
-border-radius: 6px;
-}
 
-.campo-login{
-    background-color: #004085;
-}
-
-.campo-login label{
-    color: #fefefe;
-}
-
-#img-login{
-width: 100px;
-}
-
-#but-acessar {
-background-color: #74fa1b;
-color: hwb(0 4% 96%);   
-}
-
-#but-acessar:hover {
-    background-color: #54b315;         /* Deixa o vermelho um pouco mais escuro no clique/hover */
-}
 
 /* ==========================================================================
    CABEÇALHO E BOTÃO DE SAIR (header)
@@ -274,12 +243,7 @@ color: hwb(0 4% 96%);
    RODAPÉ (footer)
    ========================================================================== */
 #rodape {
-    background-color: rgb(66, 66, 66);
-    color: aliceblue;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px 5px;
-    font-size: 0.85rem;                  /* Tamanho discreto da fonte */
-    margin-top: auto;                    /* Garante que o rodapé permaneça                                   no final do container flex */
+   background: transparent !important;
+    color: rgb(166, 166, 166) !important;
 }
 
