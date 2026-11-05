@@ -16,16 +16,47 @@
 </head>
 <body>
 
-    <header>   
-        <div class="cabeçalho">
-            <h2><i class="fa-solid fa-hospital"></i> SIGEH - Sistema de Gestão Hospitalar</h2>
-            <a href="sigeh_login.html"><button class="but" id="but-sair"><i class="fa-solid fa-right-from-bracket"></i> Sair</button></a>
+  <!-- CABEÇALHO / NAVBAR BOOTSTRAP -->
+<header>
+    <nav class="navbar navbar-expand-lg mb-2 navbar-dark bg-primary shadow-sm py-2">
+        <div class="container">
+            
+            <!-- Marca / Logo do Sistema -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="sigeh_home.html">
+                <img id="img-login" src="../imagens/logo_sigehsf.png" alt="Logo SIGEH" class="img-fluid small me-2" style="max-height: 40px;"> 
+                <h4 class="fw-bold mb-0 text-white">SIGEH</h4>
+            </a>
+
+            <!-- Links de Navegação do Menu -->
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                
+                <!-- Links do lado esquerdo -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sigeh_home.html">
+                            <i class="fa-solid fa-house me-1"></i> Início
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Área de perfil / Sair do lado direito -->
+                <div class="d-flex align-items-center text-white mt-2 mt-lg-0">
+                    <span class="me-3 small">
+                        <i class="fa-solid fa-circle-user me-1"></i> Olá, <strong>Usuário</strong>
+                    </span>
+                    <a href="sigeh_home.html" class="btn btn-outline-light btn-sm rounded-pill">
+                        <i class="fa-solid fa-right-from-bracket me-1"></i> Voltar
+                    </a>
+                </div>
+
+            </div>
         </div>
-    </header>
+    </nav>
+</header>
 
     <main>
         <!-- Caixa de Busca -->
-        <div class="container">
+        <div class="tab-container">
             <legend>Busca de Profissionais</legend>
 
             <form action="#" method="get">
@@ -46,7 +77,7 @@
 
         </div>
 
-        <div class="container">
+        <div class="tab-container">
             <legend>Lista de Profissionais</legend>
                 <table>
                     <thead>
@@ -92,9 +123,10 @@
 
     </main>
 
-    <footer id="rodape">
-        LB_Solutions™ - 2026
-    </footer>
+<hr class="border-secondary mt-3 opacity-50">
+<footer id="rodape" class="text-center text-secondary p-auto m-auto  small bg-transparent">
+    LB_Solutions™ - 2026
+</footer>
 
 </body>
 </html>
